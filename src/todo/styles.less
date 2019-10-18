@@ -1,0 +1,42 @@
+.todo {
+  &-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-item {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    line-height: 38px;
+    margin: 1px 0;
+    padding: 0 4px;
+
+    > button {
+      height: 28px;
+      line-height: 14px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+
+    > input[type=checkbox] {
+      margin-right: 8px;
+    }
+
+    > input[type=text] {
+      border: none;
+      padding: 0;
+    }
+
+    > span {
+      flex: 1;
+    }
+
+    input:checked + span {
+      color: #ddd;
+      text-decoration: line-through;
+    }
+  }
+}
